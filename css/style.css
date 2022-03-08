@@ -1,0 +1,107 @@
+@import "reset.css";
+
+.hidden {
+  display: none;
+}
+
+body {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+
+body * {
+  color: white;
+}
+
+#greeting {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote span:first-child {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#quote span:last-child {
+  border-top: 2px solid white;
+  padding-top: 5px;
+}
+
+#clock {
+  font-size: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#weather {
+  font-size: 20px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#weather span:last-child {
+  margin-top: 8px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.todo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#todo-form input {
+  font-size: 24px;
+  background-color: white;
+  border: none;
+  padding: 12px 12px;
+  color: black;
+  box-shadow: 0px 10px 10px black;
+  border-radius: 12px;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#todo-list li button {
+  margin-right: 10px;
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  box-shadow: 0px 10px 10px black;
+}
+
+#todo-list li span {
+  font-size: 24px;
+}
